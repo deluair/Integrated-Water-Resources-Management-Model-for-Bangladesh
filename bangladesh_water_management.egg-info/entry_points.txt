@@ -1,0 +1,2 @@
+[console_scripts]
+bangladesh-water = bangladesh_water_management.cli:main

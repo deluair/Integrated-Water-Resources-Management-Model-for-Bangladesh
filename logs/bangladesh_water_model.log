@@ -1,0 +1,270 @@
+2025-06-02 16:06:31.403 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-02 16:06:58.565 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-02 16:07:11.168 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-02 16:09:04.060 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-02 16:12:00.359 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-02 16:12:59.001 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-02 16:13:08.908 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-02 16:14:18.948 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-02 16:14:42.696 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-02 16:15:05.062 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-02 16:15:58.472 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-03 09:05:22.639 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-03 09:05:22.639 | INFO     | __main__:main:45 - Starting Bangladesh Water Management Model CLI...
+2025-06-03 09:05:22.639 | WARNING  | bangladesh_water_management.config:load_config:65 - Config file not found at C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\config\bangladesh_config.yaml, using default configuration
+2025-06-03 09:05:22.639 | INFO     | __main__:main:49 - Configuration loaded. Using: default
+2025-06-03 09:05:22.721 | INFO     | bangladesh_water_management.data.synthetic_data:__init__:29 - Synthetic Data Generator initialized.
+2025-06-03 09:05:22.721 | INFO     | bangladesh_water_management.modules.groundwater:__init__:35 - Groundwater Manager initialized
+2025-06-03 09:05:22.721 | INFO     | bangladesh_water_management.modules.salinity:__init__:35 - Salinity Manager initialized
+2025-06-03 09:05:22.721 | INFO     | bangladesh_water_management.modules.surface_water:__init__:39 - Surface Water Manager initialized
+2025-06-03 09:05:22.721 | INFO     | bangladesh_water_management.modules.agriculture:__init__:41 - Agricultural Water Manager initialized
+2025-06-03 09:05:22.721 | INFO     | bangladesh_water_management.modules.urban:__init__:41 - Urban Water Manager initialized
+2025-06-03 09:05:22.721 | ERROR    | __main__:main:78 - An error occurred during CLI execution: 'economic'
+2025-06-03 09:05:22.721 | ERROR    | __main__:main:79 - 'economic'
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\cli.py", line 83, in <module>
+    main()
+    └ <function main at 0x0000018B5EA2ED40>
+
+> File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\cli.py", line 51, in main
+    simulator = WaterResourcesSimulator(config)
+                │                       └ {'simulation': {'default_years': 10, 'time_step': 'monthly', 'start_year': 2024, 'random_seed': 42}, 'regions': {'all': ['dha...
+                └ <class 'bangladesh_water_management.simulator.WaterResourcesSimulator'>
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\simulator.py", line 46, in __init__
+    self.economics_manager = EconomicAnalyzer(config)
+    │                        │                └ {'simulation': {'default_years': 10, 'time_step': 'monthly', 'start_year': 2024, 'random_seed': 42}, 'regions': {'all': ['dha...
+    │                        └ <class 'bangladesh_water_management.modules.economic.EconomicAnalyzer'>
+    └ <bangladesh_water_management.simulator.WaterResourcesSimulator object at 0x0000018B2897FCE0>
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\modules\economic.py", line 31, in __init__
+    self.economic_config = config['economic']
+    │                      └ {'simulation': {'default_years': 10, 'time_step': 'monthly', 'start_year': 2024, 'random_seed': 42}, 'regions': {'all': ['dha...
+    └ <bangladesh_water_management.modules.economic.EconomicAnalyzer object at 0x0000018B28A62BA0>
+
+KeyError: 'economic'
+2025-06-03 09:05:46.857 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-03 09:05:46.857 | INFO     | __main__:main:45 - Starting Bangladesh Water Management Model CLI...
+2025-06-03 09:05:46.857 | WARNING  | bangladesh_water_management.config:load_config:65 - Config file not found at C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\config\bangladesh_config.yaml, using default configuration
+2025-06-03 09:05:46.857 | INFO     | __main__:main:49 - Configuration loaded. Using: default
+2025-06-03 09:05:46.941 | INFO     | bangladesh_water_management.data.synthetic_data:__init__:29 - Synthetic Data Generator initialized.
+2025-06-03 09:05:46.941 | INFO     | bangladesh_water_management.modules.groundwater:__init__:35 - Groundwater Manager initialized
+2025-06-03 09:05:46.941 | INFO     | bangladesh_water_management.modules.salinity:__init__:35 - Salinity Manager initialized
+2025-06-03 09:05:46.941 | INFO     | bangladesh_water_management.modules.surface_water:__init__:39 - Surface Water Manager initialized
+2025-06-03 09:05:46.941 | INFO     | bangladesh_water_management.modules.agriculture:__init__:41 - Agricultural Water Manager initialized
+2025-06-03 09:05:46.941 | INFO     | bangladesh_water_management.modules.urban:__init__:41 - Urban Water Manager initialized
+2025-06-03 09:05:46.941 | ERROR    | __main__:main:78 - An error occurred during CLI execution: name 'DataLoader' is not defined
+2025-06-03 09:05:46.941 | ERROR    | __main__:main:79 - name 'DataLoader' is not defined
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\cli.py", line 83, in <module>
+    main()
+    └ <function main at 0x000001EC1EDFF060>
+
+> File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\cli.py", line 51, in main
+    simulator = WaterResourcesSimulator(config)
+                │                       └ {'simulation': {'default_years': 10, 'time_step': 'monthly', 'start_year': 2024, 'random_seed': 42}, 'regions': {'all': ['dha...
+                └ <class 'bangladesh_water_management.simulator.WaterResourcesSimulator'>
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\simulator.py", line 46, in __init__
+    self.economics_manager = EconomicAnalyzer(config)
+    │                        │                └ {'simulation': {'default_years': 10, 'time_step': 'monthly', 'start_year': 2024, 'random_seed': 42}, 'regions': {'all': ['dha...
+    │                        └ <class 'bangladesh_water_management.modules.economic.EconomicAnalyzer'>
+    └ <bangladesh_water_management.simulator.WaterResourcesSimulator object at 0x000001EC650F00E0>
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\modules\economic.py", line 31, in __init__
+    self.data_loader = DataLoader(config)
+    │                             └ {'simulation': {'default_years': 10, 'time_step': 'monthly', 'start_year': 2024, 'random_seed': 42}, 'regions': {'all': ['dha...
+    └ <bangladesh_water_management.modules.economic.EconomicAnalyzer object at 0x000001EC6806AEA0>
+
+NameError: name 'DataLoader' is not defined
+2025-06-03 09:06:18.259 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-03 09:06:18.259 | INFO     | __main__:main:45 - Starting Bangladesh Water Management Model CLI...
+2025-06-03 09:06:18.259 | WARNING  | bangladesh_water_management.config:load_config:65 - Config file not found at C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\config\bangladesh_config.yaml, using default configuration
+2025-06-03 09:06:18.259 | INFO     | __main__:main:49 - Configuration loaded. Using: default
+2025-06-03 09:06:18.331 | INFO     | bangladesh_water_management.data.synthetic_data:__init__:29 - Synthetic Data Generator initialized.
+2025-06-03 09:06:18.331 | INFO     | bangladesh_water_management.modules.groundwater:__init__:35 - Groundwater Manager initialized
+2025-06-03 09:06:18.331 | INFO     | bangladesh_water_management.modules.salinity:__init__:35 - Salinity Manager initialized
+2025-06-03 09:06:18.331 | INFO     | bangladesh_water_management.modules.surface_water:__init__:39 - Surface Water Manager initialized
+2025-06-03 09:06:18.331 | INFO     | bangladesh_water_management.modules.agriculture:__init__:41 - Agricultural Water Manager initialized
+2025-06-03 09:06:18.331 | INFO     | bangladesh_water_management.modules.urban:__init__:41 - Urban Water Manager initialized
+2025-06-03 09:06:18.331 | INFO     | bangladesh_water_management.data.data_loader:__init__:46 - Data Loader initialized
+2025-06-03 09:06:18.331 | INFO     | bangladesh_water_management.modules.economic:__init__:34 - Economic Analyzer initialized.
+2025-06-03 09:06:18.331 | INFO     | bangladesh_water_management.modules.policy:__init__:45 - Policy Analyzer initialized
+2025-06-03 09:06:18.331 | INFO     | bangladesh_water_management.simulator:_initialize_data:56 - Generating synthetic data for simulation...
+2025-06-03 09:06:18.331 | ERROR    | __main__:main:78 - An error occurred during CLI execution: SyntheticDataGenerator.generate_hydrological_data() missing 1 required positional argument: 'station_ids'
+2025-06-03 09:06:18.331 | ERROR    | __main__:main:79 - SyntheticDataGenerator.generate_hydrological_data() missing 1 required positional argument: 'station_ids'
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\cli.py", line 83, in <module>
+    main()
+    └ <function main at 0x000001F0EA1FED40>
+
+> File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\cli.py", line 51, in main
+    simulator = WaterResourcesSimulator(config)
+                │                       └ {'simulation': {'default_years': 10, 'time_step': 'monthly', 'start_year': 2024, 'random_seed': 42}, 'regions': {'all': ['dha...
+                └ <class 'bangladesh_water_management.simulator.WaterResourcesSimulator'>
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\simulator.py", line 50, in __init__
+    self._initialize_data()
+    │    └ <function WaterResourcesSimulator._initialize_data at 0x000001F0B3DB9620>
+    └ <bangladesh_water_management.simulator.WaterResourcesSimulator object at 0x000001F0B3BE09B0>
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\simulator.py", line 59, in _initialize_data
+    self.hydrological_data = self.data_generator.generate_hydrological_data()
+    │                        │    │              └ <function SyntheticDataGenerator.generate_hydrological_data at 0x000001F0B18C74C0>
+    │                        │    └ <bangladesh_water_management.data.synthetic_data.SyntheticDataGenerator object at 0x000001F0B3D47CB0>
+    │                        └ <bangladesh_water_management.simulator.WaterResourcesSimulator object at 0x000001F0B3BE09B0>
+    └ <bangladesh_water_management.simulator.WaterResourcesSimulator object at 0x000001F0B3BE09B0>
+
+TypeError: SyntheticDataGenerator.generate_hydrological_data() missing 1 required positional argument: 'station_ids'
+2025-06-03 09:07:22.052 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-03 09:07:22.052 | INFO     | __main__:main:45 - Starting Bangladesh Water Management Model CLI...
+2025-06-03 09:07:22.053 | WARNING  | bangladesh_water_management.config:load_config:65 - Config file not found at C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\config\bangladesh_config.yaml, using default configuration
+2025-06-03 09:07:22.054 | INFO     | __main__:main:49 - Configuration loaded. Using: default
+2025-06-03 09:07:22.146 | INFO     | bangladesh_water_management.data.synthetic_data:__init__:29 - Synthetic Data Generator initialized.
+2025-06-03 09:07:22.146 | INFO     | bangladesh_water_management.modules.groundwater:__init__:35 - Groundwater Manager initialized
+2025-06-03 09:07:22.147 | INFO     | bangladesh_water_management.modules.salinity:__init__:35 - Salinity Manager initialized
+2025-06-03 09:07:22.147 | INFO     | bangladesh_water_management.modules.surface_water:__init__:39 - Surface Water Manager initialized
+2025-06-03 09:07:22.148 | INFO     | bangladesh_water_management.modules.agriculture:__init__:41 - Agricultural Water Manager initialized
+2025-06-03 09:07:22.148 | INFO     | bangladesh_water_management.modules.urban:__init__:41 - Urban Water Manager initialized
+2025-06-03 09:07:22.148 | INFO     | bangladesh_water_management.data.data_loader:__init__:46 - Data Loader initialized
+2025-06-03 09:07:22.149 | INFO     | bangladesh_water_management.modules.economic:__init__:34 - Economic Analyzer initialized.
+2025-06-03 09:07:22.149 | INFO     | bangladesh_water_management.modules.policy:__init__:45 - Policy Analyzer initialized
+2025-06-03 09:07:22.149 | INFO     | bangladesh_water_management.simulator:_initialize_data:56 - Generating synthetic data for simulation...
+2025-06-03 09:07:22.160 | ERROR    | __main__:main:78 - An error occurred during CLI execution: 'Index' object has no attribute 'mean'
+2025-06-03 09:07:22.161 | ERROR    | __main__:main:79 - 'Index' object has no attribute 'mean'
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\cli.py", line 83, in <module>
+    main()
+    └ <function main at 0x00000203CF9BED40>
+
+> File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\cli.py", line 51, in main
+    simulator = WaterResourcesSimulator(config)
+                │                       └ {'simulation': {'default_years': 10, 'time_step': 'monthly', 'start_year': 2024, 'random_seed': 42}, 'regions': {'all': ['dha...
+                └ <class 'bangladesh_water_management.simulator.WaterResourcesSimulator'>
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\simulator.py", line 50, in __init__
+    self._initialize_data()
+    │    └ <function WaterResourcesSimulator._initialize_data at 0x0000020398B094E0>
+    └ <bangladesh_water_management.simulator.WaterResourcesSimulator object at 0x0000020398D876B0>
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\simulator.py", line 66, in _initialize_data
+    self.hydrological_data = self.data_generator.generate_hydrological_data(station_ids=station_ids)
+    │                        │    │              │                                      └ ['ganges', 'brahmaputra', 'meghna', 'padma', 'jamuna']
+    │                        │    │              └ <function SyntheticDataGenerator.generate_hydrological_data at 0x000002039651B380>
+    │                        │    └ <bangladesh_water_management.data.synthetic_data.SyntheticDataGenerator object at 0x0000020398C7EF00>
+    │                        └ <bangladesh_water_management.simulator.WaterResourcesSimulator object at 0x0000020398D876B0>
+    └ <bangladesh_water_management.simulator.WaterResourcesSimulator object at 0x0000020398D876B0>
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\data\synthetic_data.py", line 129, in generate_hydrological_data
+    water_level = self._add_noise(water_level, st_params.get('level_noise', 0.15))
+                  │    │          │            │         └ <method 'get' of 'dict' objects>
+                  │    │          │            └ {}
+                  │    │          └ Index([4.8130448619370245, 4.7615681002291375,  4.710161894356391,
+                  │    │                   4.6588414562421505, 4.6076219724297225,  4.55651859...
+                  │    └ <function SyntheticDataGenerator._add_noise at 0x0000020396519D00>
+                  └ <bangladesh_water_management.data.synthetic_data.SyntheticDataGenerator object at 0x0000020398C7EF00>
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\data\synthetic_data.py", line 48, in _add_noise
+    return data + np.random.normal(0, noise_level * np.abs(data).mean() if np.abs(data).mean() > 0 else noise_level, len(data))
+           │      │  │      │         │             │  │   │               │  │   │                     │                └ Index([4.8130448619370245, 4.7615681002291375,  4.710161894356391,
+           │      │  │      │         │             │  │   │               │  │   │                     │                         4.6588414562421505, 4.6076219724297225,  4.55651859...
+           │      │  │      │         │             │  │   │               │  │   │                     └ 0.15
+           │      │  │      │         │             │  │   │               │  │   └ Index([4.8130448619370245, 4.7615681002291375,  4.710161894356391,
+           │      │  │      │         │             │  │   │               │  │            4.6588414562421505, 4.6076219724297225,  4.55651859...
+           │      │  │      │         │             │  │   │               │  └ <ufunc 'absolute'>
+           │      │  │      │         │             │  │   │               └ <module 'numpy' from 'C:\\Users\\mhossen\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\__init__.py'>
+           │      │  │      │         │             │  │   └ Index([4.8130448619370245, 4.7615681002291375,  4.710161894356391,
+           │      │  │      │         │             │  │            4.6588414562421505, 4.6076219724297225,  4.55651859...
+           │      │  │      │         │             │  └ <ufunc 'absolute'>
+           │      │  │      │         │             └ <module 'numpy' from 'C:\\Users\\mhossen\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\__init__.py'>
+           │      │  │      │         └ 0.15
+           │      │  │      └ <built-in method normal of numpy.random.mtrand.RandomState object at 0x00000203EFD57540>
+           │      │  └ <module 'numpy.random' from 'C:\\Users\\mhossen\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\rand...
+           │      └ <module 'numpy' from 'C:\\Users\\mhossen\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\__init__.py'>
+           └ Index([4.8130448619370245, 4.7615681002291375,  4.710161894356391,
+                    4.6588414562421505, 4.6076219724297225,  4.55651859...
+
+AttributeError: 'Index' object has no attribute 'mean'
+2025-06-03 09:07:49.171 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-03 09:07:49.172 | INFO     | __main__:main:45 - Starting Bangladesh Water Management Model CLI...
+2025-06-03 09:07:49.174 | WARNING  | bangladesh_water_management.config:load_config:65 - Config file not found at C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\config\bangladesh_config.yaml, using default configuration
+2025-06-03 09:07:49.175 | INFO     | __main__:main:49 - Configuration loaded. Using: default
+2025-06-03 09:07:49.339 | INFO     | bangladesh_water_management.data.synthetic_data:__init__:29 - Synthetic Data Generator initialized.
+2025-06-03 09:07:49.341 | INFO     | bangladesh_water_management.modules.groundwater:__init__:35 - Groundwater Manager initialized
+2025-06-03 09:07:49.341 | INFO     | bangladesh_water_management.modules.salinity:__init__:35 - Salinity Manager initialized
+2025-06-03 09:07:49.341 | INFO     | bangladesh_water_management.modules.surface_water:__init__:39 - Surface Water Manager initialized
+2025-06-03 09:07:49.343 | INFO     | bangladesh_water_management.modules.agriculture:__init__:41 - Agricultural Water Manager initialized
+2025-06-03 09:07:49.344 | INFO     | bangladesh_water_management.modules.urban:__init__:41 - Urban Water Manager initialized
+2025-06-03 09:07:49.345 | INFO     | bangladesh_water_management.data.data_loader:__init__:46 - Data Loader initialized
+2025-06-03 09:07:49.345 | INFO     | bangladesh_water_management.modules.economic:__init__:34 - Economic Analyzer initialized.
+2025-06-03 09:07:49.346 | INFO     | bangladesh_water_management.modules.policy:__init__:45 - Policy Analyzer initialized
+2025-06-03 09:07:49.347 | INFO     | bangladesh_water_management.simulator:_initialize_data:56 - Generating synthetic data for simulation...
+2025-06-03 09:07:49.367 | INFO     | bangladesh_water_management.data.synthetic_data:generate_hydrological_data:157 - Generated synthetic hydrological data for 5 stations.
+2025-06-03 09:07:49.403 | INFO     | bangladesh_water_management.data.synthetic_data:generate_water_quality_data:257 - Generated synthetic water quality data for 12 locations.
+2025-06-03 09:07:49.407 | ERROR    | __main__:main:78 - An error occurred during CLI execution: 'SyntheticDataGenerator' object has no attribute 'generate_water_demand_data'
+2025-06-03 09:07:49.407 | ERROR    | __main__:main:79 - 'SyntheticDataGenerator' object has no attribute 'generate_water_demand_data'
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\cli.py", line 83, in <module>
+    main()
+    └ <function main at 0x0000021856E9F060>
+
+> File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\cli.py", line 51, in main
+    simulator = WaterResourcesSimulator(config)
+                │                       └ {'simulation': {'default_years': 10, 'time_step': 'monthly', 'start_year': 2024, 'random_seed': 42}, 'regions': {'all': ['dha...
+                └ <class 'bangladesh_water_management.simulator.WaterResourcesSimulator'>
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\simulator.py", line 50, in __init__
+    self._initialize_data()
+    │    └ <function WaterResourcesSimulator._initialize_data at 0x000002181FEC9580>
+    └ <bangladesh_water_management.simulator.WaterResourcesSimulator object at 0x000002181F40C740>
+
+  File "C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\simulator.py", line 75, in _initialize_data
+    self.demand_data = self.data_generator.generate_water_demand_data(cities=cities_for_demand)
+    │                  │    │                                                └ ['dhaka_metro', 'chittagong', 'sylhet', 'rajshahi', 'khulna']
+    │                  │    └ <bangladesh_water_management.data.synthetic_data.SyntheticDataGenerator object at 0x000002182003B4D0>
+    │                  └ <bangladesh_water_management.simulator.WaterResourcesSimulator object at 0x000002181F40C740>
+    └ <bangladesh_water_management.simulator.WaterResourcesSimulator object at 0x000002181F40C740>
+
+AttributeError: 'SyntheticDataGenerator' object has no attribute 'generate_water_demand_data'. Did you mean: 'generate_water_quality_data'?
+2025-06-03 09:08:43.194 | INFO     | bangladesh_water_management.utils.logging_config:setup_logging:102 - Logging configured.
+2025-06-03 09:08:43.194 | INFO     | __main__:main:45 - Starting Bangladesh Water Management Model CLI...
+2025-06-03 09:08:43.194 | WARNING  | bangladesh_water_management.config:load_config:65 - Config file not found at C:\Users\mhossen\OneDrive - University of Tennessee\AI\Integrated Water Resources Management Model for Bangladesh\bangladesh_water_management\config\bangladesh_config.yaml, using default configuration
+2025-06-03 09:08:43.194 | INFO     | __main__:main:49 - Configuration loaded. Using: default
+2025-06-03 09:08:43.264 | INFO     | bangladesh_water_management.data.synthetic_data:__init__:29 - Synthetic Data Generator initialized.
+2025-06-03 09:08:43.264 | INFO     | bangladesh_water_management.modules.groundwater:__init__:35 - Groundwater Manager initialized
+2025-06-03 09:08:43.264 | INFO     | bangladesh_water_management.modules.salinity:__init__:35 - Salinity Manager initialized
+2025-06-03 09:08:43.264 | INFO     | bangladesh_water_management.modules.surface_water:__init__:39 - Surface Water Manager initialized
+2025-06-03 09:08:43.264 | INFO     | bangladesh_water_management.modules.agriculture:__init__:41 - Agricultural Water Manager initialized
+2025-06-03 09:08:43.264 | INFO     | bangladesh_water_management.modules.urban:__init__:41 - Urban Water Manager initialized
+2025-06-03 09:08:43.264 | INFO     | bangladesh_water_management.data.data_loader:__init__:46 - Data Loader initialized
+2025-06-03 09:08:43.264 | INFO     | bangladesh_water_management.modules.economic:__init__:34 - Economic Analyzer initialized.
+2025-06-03 09:08:43.264 | INFO     | bangladesh_water_management.modules.policy:__init__:45 - Policy Analyzer initialized
+2025-06-03 09:08:43.264 | INFO     | bangladesh_water_management.simulator:_initialize_data:56 - Generating synthetic data for simulation...
+2025-06-03 09:08:43.278 | INFO     | bangladesh_water_management.data.synthetic_data:generate_hydrological_data:157 - Generated synthetic hydrological data for 5 stations.
+2025-06-03 09:08:43.287 | INFO     | bangladesh_water_management.data.synthetic_data:generate_water_quality_data:257 - Generated synthetic water quality data for 12 locations.
+2025-06-03 09:08:43.299 | INFO     | bangladesh_water_management.data.synthetic_data:generate_urban_water_data:347 - Generated synthetic urban water data for 5 cities.
+2025-06-03 09:08:43.301 | INFO     | bangladesh_water_management.simulator:_initialize_data:80 - Synthetic data generation completed
+2025-06-03 09:08:43.301 | INFO     | bangladesh_water_management.simulator:__init__:52 - Water Resources Simulator initialized successfully
+2025-06-03 09:08:43.302 | INFO     | __main__:main:52 - WaterResourcesSimulator initialized successfully.
+2025-06-03 09:08:43.302 | INFO     | __main__:main:69 - Simulator initialized. No scenario selected to run.
+2025-06-03 09:08:43.302 | INFO     | __main__:main:75 - CLI execution finished.

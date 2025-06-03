@@ -1,0 +1,202 @@
+Metadata-Version: 2.4
+Name: bangladesh-water-management
+Version: 1.0.0
+Summary: Integrated Water Resources Management Model for Bangladesh
+Home-page: https://github.com/bangladesh-water-management/iwrm-model
+Author: Water Resources Management Team
+Author-email: water.management@bangladesh.gov.bd
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Classifier: Topic :: Scientific/Engineering :: GIS
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: scipy>=1.7.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: matplotlib>=3.4.0
+Requires-Dist: seaborn>=0.11.0
+Requires-Dist: plotly>=5.0.0
+Requires-Dist: geopandas>=0.9.0
+Requires-Dist: rasterio>=1.2.0
+Requires-Dist: fiona>=1.8.0
+Requires-Dist: shapely>=1.7.0
+Requires-Dist: folium>=0.12.0
+Requires-Dist: pulp>=2.5.0
+Requires-Dist: scipy>=1.7.0
+Requires-Dist: sqlalchemy>=1.4.0
+Requires-Dist: psycopg2-binary>=2.9.0
+Requires-Dist: influxdb-client>=1.28.0
+Requires-Dist: pandera>=0.9.0
+Requires-Dist: streamlit>=1.10.0
+Requires-Dist: dash>=2.5.0
+Requires-Dist: dash-bootstrap-components>=1.1.0
+Requires-Dist: scikit-learn>=1.0.0
+Requires-Dist: xgboost>=1.5.0
+Requires-Dist: flopy>=3.3.5
+Requires-Dist: pyemu>=1.1.0
+Requires-Dist: pyyaml>=5.4.0
+Requires-Dist: click>=8.0.0
+Requires-Dist: tqdm>=4.62.0
+Requires-Dist: loguru>=0.6.0
+Requires-Dist: jsonschema>=3.2.0
+Requires-Dist: pytest>=6.2.0
+Requires-Dist: pytest-cov>=2.12.0
+Requires-Dist: sphinx>=4.0.0
+Requires-Dist: sphinx-rtd-theme>=0.5.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Integrated Water Resources Management Model for Bangladesh
+
+A comprehensive Python-based simulation platform designed to model Bangladesh's complex water resource challenges across coastal salinity intrusion, groundwater depletion, and freshwater scarcity while optimizing water allocation, pricing, and infrastructure systems.
+
+## Overview
+
+This simulator addresses critical water management challenges in Bangladesh:
+- **Coastal Salinity**: Salinity levels reaching 40.0 ppt (equivalent to seawater) in coastal regions
+- **Groundwater Depletion**: Approximately 1 meter annual depletion since 2000 in northwestern Bangladesh
+- **Urban Water Crisis**: Water levels dropped 60-75 meters below ground surface in Dhaka
+- **Agricultural Impact**: 80% of agricultural land depends on groundwater irrigation
+
+## Key Features
+
+### Core Simulation Modules
+1. **Regional Groundwater Management Engine**
+2. **Coastal Salinity Intrusion Module**
+3. **Surface Water Allocation & Management System**
+4. **Agricultural Water Demand & Productivity Module**
+5. **Urban Water Supply & Infrastructure Module**
+6. **Water Economics & Pricing Module**
+7. **Integrated Policy Simulation Engine**
+
+### Bangladesh-Specific Scenarios
+- Extreme salinity events from cyclone-induced saltwater intrusion
+- Barind Tract groundwater crisis simulation
+- Farakka impact on southwestern Bangladesh water flows
+- Climate change adaptation modeling
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/bangladesh-water-management/iwrm-model.git
+cd iwrm-model
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Install the package
+pip install -e .
+```
+
+## Quick Start
+
+```python
+from bangladesh_water_management import WaterResourcesSimulator
+from bangladesh_water_management.config import load_config
+
+# Load configuration
+config = load_config('config/bangladesh_config.yaml')
+
+# Initialize simulator
+simulator = WaterResourcesSimulator(config)
+
+# Run groundwater depletion scenario
+results = simulator.run_groundwater_scenario(
+    region='barind_tract',
+    years=10,
+    extraction_rate=1.2  # 20% increase
+)
+
+# Analyze salinity intrusion
+salinity_results = simulator.run_salinity_scenario(
+    region='coastal_southwest',
+    sea_level_rise=0.3,  # 30cm rise
+    cyclone_frequency=1.5  # 50% increase
+)
+
+# Generate policy recommendations
+recommendations = simulator.generate_policy_recommendations(results)
+```
+
+## Project Structure
+
+```
+bangladesh_water_management/
+├── core/                    # Core simulation engines
+├── models/                  # Hydrological and economic models
+├── data/                    # Synthetic and real data
+├── modules/                 # Specialized water management modules
+├── utils/                   # Utility functions
+├── visualization/           # Dashboards and plotting
+├── config/                  # Configuration files
+└── tests/                   # Test suite
+```
+
+## Data Sources
+
+- **Bangladesh Water Development Board (BWDB)**: Hydrological monitoring data
+- **Department of Public Health Engineering**: Water quality and treatment data
+- **Department of Agricultural Extension**: Irrigation and crop data
+- **NASA Satellite Data**: Groundwater depletion monitoring
+- **World Bank Datasets**: Economic and infrastructure data
+
+## Key Outputs
+
+### Real-Time Monitoring
+- Groundwater status across regions
+- Surface water availability
+- Salinity tracking and alerts
+- Water quality assessments
+
+### Economic Analysis
+- Agricultural productivity impacts
+- Infrastructure investment analysis
+- Health cost assessments
+- Regional development impacts
+
+### Policy Support
+- Water allocation optimization
+- Pricing policy analysis
+- Infrastructure planning
+- Emergency response protocols
+
+## Contributing
+
+We welcome contributions from water resource professionals, researchers, and developers. Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Bangladesh Water Development Board
+- Ministry of Water Resources, Bangladesh
+- International Water Management Institute
+- University of Tennessee Research Team
+
+## Contact
+
+For questions and support:
+- Email: water.management@bangladesh.gov.bd
+- Documentation: [https://bangladesh-water-management.readthedocs.io]()
+- Issues: [GitHub Issues](https://github.com/bangladesh-water-management/iwrm-model/issues)
